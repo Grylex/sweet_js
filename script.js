@@ -32,6 +32,7 @@ let speed = 1000;
 
 
 let randomModifier = 0;
+let randomStyle= Math.floor(Math.random()*borderStyles.length);
 
 
 
@@ -61,7 +62,7 @@ function mod() {
     if((randomModifier + randomStyle) >borderStyles.length) {
        
     }
-    //console.log(randomModifier);
+    console.log(randomModifier);
 }
 
 function start(){
@@ -178,8 +179,8 @@ function start(){
 
         //console.log(hexOne);
        // console.log(hexTwo);
-       //console.log(randomStyle);
-        //console.log(randomStyle + randomModifier + 'mod'); 
+       console.log(randomStyle);
+        console.log(randomStyle + randomModifier + 'mod'); 
 
         setTimeout(start,speed);
         
